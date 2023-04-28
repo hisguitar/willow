@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8.5
-  projectileEffect: {fileID: 8271024392550745775, guid: 7ee5b7712e14652469a2d956610302ec, type: 3}
+  explosionEffect: {fileID: 8271024392550745775, guid: 7ee5b7712e14652469a2d956610302ec, type: 3}
 --- !u!114 &7274096591546673746
 MonoBehaviour:
   m_ObjectHideFlags: 0

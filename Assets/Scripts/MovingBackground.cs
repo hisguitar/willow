@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovingBackground : MonoBehaviour
 {
-    /*YOU SHOULD PUT THIS SCRIPT TO EVERY BACKGROUND THAT YOU WANT TO MAKE PARALLAX EFFECT*/
+    /*YOU HAVE TO PUT THIS SCRIPT TO EVERY BACKGROUND THAT YOU WANT TO MAKE PARALLAX EFFECT*/
     [SerializeField] private float parallaxEffect; // Parallax effect speed
     private float _startPosition;
     private GameObject _camera;

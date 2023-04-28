@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT "DOOR" THAT HAVE "BOX COLLIDER 2D" FOR DETECT PLAYER
+    /*YOU HAVE TO CREATE NEW OBJECT CALLED "DOOR" THEN ADD "BOX COLLIDER 2D" COMPONENT FOR DETECT PLAYER
      AND PUT THIS SCRIP TO IT*/
     [SerializeField] private string nextSceneName; // Type scene that you want to go on Inspector
 

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Initializer : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT
+    /*YOU HAVE TO CREATE NEW OBJECT
      AND PUT THIS SCRIPT TO IT
      THEN MAKE THIS OBJECT TO BE PREFAB, SO YOU MUST USE IT IN EVERY SCENE*/
     private const string LoadingScreenName = "GameplayManager";

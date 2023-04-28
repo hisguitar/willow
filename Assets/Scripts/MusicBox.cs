@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MusicBox : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT IN HIERARCHY AND PUT THIS SCRIPT IN TO IT
+    /*YOU HAVE TO CREATE NEW OBJECT IN HIERARCHY AND PUT THIS SCRIPT IN TO IT
      AND PUT THAT OBJECT TO BE PREFAB, SO YOU CAN USE IT IN EVERY SCENE*/
     public string backgroundMusic; // Type name of Background Music
 

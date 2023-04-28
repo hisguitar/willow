@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FallDetector : MonoBehaviour
 {
-    /*YOU SHOULD PUT THIS SCRIPT TO CHARACTER THAT'S ON THE ISLAND.*/
+    /*YOU HAVE TO PUT THIS SCRIPT TO CHARACTER THAT IS ON THE ISLAND.*/
     private Vector3 _respawnPoint;
     public GameObject fallDetector;
     public bool enemy;

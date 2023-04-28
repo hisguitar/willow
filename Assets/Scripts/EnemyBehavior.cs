@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT "MONSTER" THAT HAVE "RIGIDBODY 2D, SPRITE RENDERER, ANIMATOR"
+    /*YOU HAVE TO CREATE NEW OBJECT CALLED "MONSTER" THEN ADD "RIGIDBODY 2D, SPRITE RENDERER, ANIMATOR" COMPONENT
      AND PUT THIS SCRIPT TO IT
      THEN YOU HAVE TO CREATE CHILDREN OBJECT..
      - MONSTER COLLIDER THAT HAVE "BOX COLLIDER 2D"
@@ -85,7 +85,7 @@ public class EnemyBehavior : MonoBehaviour
         _distance = Vector2.Distance(transform.position, target.position);
         
         if (_distance > attackDistance) // If distance between enemy and player > attack distance
-        { StopAttack(); }
+        { StopAttack();}
         else if (attackDistance >= _distance && _cooling == false) // If distance between enemy and player <= attack distance & cooldown is false
         { Attack(); }
 
@@ -149,7 +149,7 @@ public class EnemyBehavior : MonoBehaviour
     public void CrossOver() // // Set to be public because i need to call in other script (DangerZoneCheck Script)
     {
         // Play jump animation
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpForce);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpForce); 
     }
     
     // Attack Method ---------------------------------------------------------------------------------------------------

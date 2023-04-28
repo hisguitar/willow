@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353813377762026393}
   - component: {fileID: 4280137927912900998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skeleton Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1830161995, guid: ef985d67ed054364c9b25dfaad5e8400, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1058,8 +1058,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Skeleton
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e1ae0c531e1323a4a82bdb107d331868, type: 2}
-  m_sharedMaterial: {fileID: -8621956713719703717, guid: e1ae0c531e1323a4a82bdb107d331868, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4433dc881b948d74fb2ea901ff90ef9d, type: 2}
+  m_sharedMaterial: {fileID: 2842800843774415582, guid: 4433dc881b948d74fb2ea901ff90ef9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &9146506860902990761

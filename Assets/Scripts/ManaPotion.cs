@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ManaPotion : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT THAT HAVE "BOX COLLIDER 2D" FOR DETECT PLAYER
+    /*YOU HAVE TO CREATE NEW OBJECT THEN ADD "BOX COLLIDER 2D" COMPONENT FOR DETECT PLAYER
      AND PUT THIS SCRIPT TO IT*/
     [SerializeField] private int mana;
 

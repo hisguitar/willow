@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ObstacleCheck : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT TO BE CHILDREN OF MONSTER OR.. THAT HAVE "COLLIDER" FOR DETECT OBSTACLE
+    /*YOU HAVE TO CREATE NEW OBJECT TO BE CHILDREN OF MONSTER OR.. THEN ADD "COLLIDER" COMPONENT FOR DETECT OBSTACLE
      AND PUT THIS SCRIPT TO IT*/
     private EnemyBehavior _enemy; // Link with EnemyBehavior script
     

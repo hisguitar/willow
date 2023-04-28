@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2ed5ead4969d649afe136405db91d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionAttack: KnightAttack
+  motionAttack: Knight Attack
 --- !u!1 &1736116592798991799
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,8 +282,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Knight
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e1ae0c531e1323a4a82bdb107d331868, type: 2}
-  m_sharedMaterial: {fileID: -8621956713719703717, guid: e1ae0c531e1323a4a82bdb107d331868, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4433dc881b948d74fb2ea901ff90ef9d, type: 2}
+  m_sharedMaterial: {fileID: 2842800843774415582, guid: 4433dc881b948d74fb2ea901ff90ef9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -563,7 +563,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 579895026, guid: 0df07eb7a358f2c4c8fde85508884463, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
   enemyPower: 15
   attackDistance: 2
   timer: 2
-  motionAttack: KnightAttack
+  motionAttack: Knight Attack
   leftLimit: {fileID: 4627283170855868052}
   rightLimit: {fileID: 4627283171038556014}
   target: {fileID: 0}
@@ -696,7 +696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8292190141292872303}
   - component: {fileID: 2149262147846453004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Knight Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

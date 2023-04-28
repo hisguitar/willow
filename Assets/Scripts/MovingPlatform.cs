@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT THAT HAVE "BOX COLLIDER 2D"
+    /*YOU HAVE TO CREATE NEW OBJECT THEN ADD "BOX COLLIDER 2D" COMPONENT
      AND PUT THIS SCRIPT TO IT
      DON'T FOR GET TO CREATE OBJECT "DIRECTION POINT"*/
     public float speed; // Speed of the platform

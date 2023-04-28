@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
+    /*YOU HAVE TO CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
      AND PUT THIS SCRIPT TO IT
      AND CREATE EVERYTHING THAT YOU WANT IT TO WORK IN BACKGROUND*/
     private static GameplayManager _instance; // First variable of instance

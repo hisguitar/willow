@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreenController : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
+    /*YOU HAVE CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
      AND PUT THIS SCRIPT TO IT*/
     public static LoadingScreenController Instance { get; private set; }
 

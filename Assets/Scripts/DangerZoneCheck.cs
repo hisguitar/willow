@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DangerZoneCheck : MonoBehaviour
 {
-    /*YOU SHOULD CREATE NEW OBJECT "DANGER ZONE" THAT HAVE "BOX COLLIDER 2D" TO DETECT PLAYER
+    /*YOU HAVE TO CREATE NEW OBJECT CALLED "DANGER ZONE" THEN ADD "BOX COLLIDER 2D" COMPONENT FOR DETECT PLAYER
      AND PUT THIS SCRIPT TO IT*/
     public string motionAttack; // Type name of motion attack (YOU CAN CHECK NAME OF IT ON THE ANIMATOR PAGE)
     
