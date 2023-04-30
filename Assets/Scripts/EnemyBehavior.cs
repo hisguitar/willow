@@ -62,7 +62,7 @@ public class EnemyBehavior : MonoBehaviour
         // Health conditions
         if (currentHealth <= 0) // If enemy's dead
         {
-            GameplayManager.instance.level += 1;
+            GameplayManager.instance.currentLevel++;
             combatPopups.SetActive(false); // Set combatPopups to be false
             Destroy(gameObject); // Destroy this game object
         }

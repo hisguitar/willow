@@ -24,6 +24,7 @@ public class SoundManager : MonoBehaviour
         Click,
         GodIsGoodToMe, // Background music for MainMenu
         StabbedEffect,
+        LoveIsPuuung, // Background music for EndCredit
     }
 
     private void Awake()

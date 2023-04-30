@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -29,7 +28,7 @@ public class GameplayManager : MonoBehaviour
 
     [Header("Alert Variables")]
     [SerializeField] private TMP_Text alertText; // Text that you want to alert
-    public int level = 1;
+    public int currentLevel = 1;
 
     [Header("End Pages Variables")]
     public GameObject youSurvive;
@@ -43,13 +42,13 @@ public class GameplayManager : MonoBehaviour
     private void Update()
     {
         // Level conditions
-        if (level == 3)
+        if (currentLevel == 3)
         {
-            StartCoroutine(SendAlert("Your mana regeneration is increased by x3!", 3));
             manaRegeneration = 15;
-            level += 1;
+            StartCoroutine(SendAlert("Your mana regeneration is increased by x3!", 3));
+            currentLevel++;
         }
-        
+
         // Health conditions
         if (currentHealth > MinHealth)
         {
@@ -104,7 +103,7 @@ public class GameplayManager : MonoBehaviour
     }
     public void IncreaseMana(float mana) // Increase mana when you collect items.
     {
-        StartCoroutine(SendAlert($"You have gained\v{mana} mana", 1));
+        StartCoroutine(SendAlert($"You have gained {mana} mana", 1));
         currentMana += mana;
     }
     

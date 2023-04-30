@@ -4,7 +4,8 @@ public class MusicBox : MonoBehaviour
 {
     /*YOU HAVE TO CREATE NEW OBJECT IN HIERARCHY AND PUT THIS SCRIPT IN TO IT
      AND PUT THAT OBJECT TO BE PREFAB, SO YOU CAN USE IT IN EVERY SCENE*/
-    public string backgroundMusic; // Type name of Background Music
+    private enum MusicName { Memories, GodIsGoodToMe, LoveIsPuuung }
+    [SerializeField] private MusicName musicName; // Type name of Background Music
 
     // Update is called once per frame
     public void Start()
@@ -13,14 +14,17 @@ public class MusicBox : MonoBehaviour
         if (SoundManager.instance.GetComponent<AudioSource>() != null)
         { SoundManager.instance.GetComponent<AudioSource>().Stop(); }
 
-        switch (backgroundMusic)
+        switch (musicName)
         {
             // Start new music
-            case "Memories":
+            case MusicName.Memories:
                 SoundManager.instance.Play(SoundManager.SoundName.Memories);
                 break;
-            case "GodIsGoodToMe":
+            case MusicName.GodIsGoodToMe:
                 SoundManager.instance.Play(SoundManager.SoundName.GodIsGoodToMe);
+                break;
+            case MusicName.LoveIsPuuung:
+                SoundManager.instance.Play(SoundManager.SoundName.LoveIsPuuung);
                 break;
         }
     }
