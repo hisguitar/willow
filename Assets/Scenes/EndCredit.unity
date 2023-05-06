@@ -522,7 +522,7 @@ MonoBehaviour:
     notification,\nSpace coin win notification,\nSword slash swoosh,\nNinja Jump,\nby
     mixkit.co\n\nDoom,\nExplosion Effect,\nGod is good to me,\nJump Effect,\nMemories,\nby
     unknow\n\nLove is Puuung\u2019s StoryPic English Ver\nby MONOMAN\n\nBack Button
-    free icon,\nby Freepik"
+    free icon,\nby Freepik\n\nPortal,\nby Ruxar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -852,7 +852,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

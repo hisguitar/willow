@@ -28,7 +28,9 @@ public class GameplayManager : MonoBehaviour
 
     [Header("Alert Variables")]
     [SerializeField] private TMP_Text alertText; // Text that you want to alert
+    [SerializeField] private TMP_Text currentLevelText;
     public int currentLevel = 1;
+    public bool levelUp = false;
 
     [Header("End Pages Variables")]
     public GameObject youSurvive;
@@ -42,12 +44,13 @@ public class GameplayManager : MonoBehaviour
     private void Update()
     {
         // Level conditions
-        if (currentLevel == 3)
+        if (currentLevel == 3 && levelUp == true)
         {
+            levelUp = false;
             manaRegeneration = 15;
             StartCoroutine(SendAlert("Your mana regeneration is increased by x3!", 3));
-            currentLevel++;
         }
+        currentLevelText.text = $"Level: {currentLevel}";
 
         // Health conditions
         if (currentHealth > MinHealth)

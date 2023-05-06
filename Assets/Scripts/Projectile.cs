@@ -1,26 +1,47 @@
+using System.Collections;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    /*YOU HAVE TO CREATE NEW OBJECT TO BE PROJECTILE
-     AND PUT THIS SCRIPT TO IT
-     THEN MAKE THIS OBJECT TO BE PREFAB, SO YOU CAN USE IT TO BE PROJECTILE*/
-    [SerializeField] private float speed = 8.5f; // Projectile speed
-    [SerializeField] private GameObject explosionEffect; // Projectile impact
-
-    // Update is called once per frame
-    private void Update()
-    { transform.position += - transform.right * speed * Time.deltaTime; } // Projectile movement
-
-    private void OnCollisionEnter2D() // When it collides with another object
+    /* YOU HAVE TO CREATE NEW OBJECT TO BE PROJECTILE
+     * AND PUT THIS SCRIPT TO IT
+     * THEN MAKE THIS OBJECT TO BE PREFAB, SO YOU CAN USE IT TO BE PROJECTILE */
+     
+    [SerializeField] private float damage; // Damage of the projectile
+    [SerializeField] private float initialSpeed = 8f; // Initial speed of the projectile
+    [SerializeField] private Rigidbody2D rb; // Rigidbody of projectile
+    [SerializeField] private GameObject impactEffect; // Projectile impact
+    
+    private void Start()
     {
-        SoundManager.instance.Play(SoundManager.SoundName.ShotEffect); // Play Sound: ShotEffect
-        Instantiate(explosionEffect, transform.position, Quaternion.identity); // Shot impact
-        
-        FindObjectOfType<EnemyBehavior>().TakeDamage(10); // Any object used EnemyBehavior script takes 10 damage
-        Destroy(this.gameObject); // Destroy this game object
+        // Initial velocity of the projectile
+        rb.velocity = -transform.right * initialSpeed;
     }
 
-    private void OnBecameInvisible() // When it disappears from the screen
-    { Destroy(this.gameObject); } // Destroy this game object
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if enemy/player collide to this object or not
+        EnemyBehavior enemy = collision.gameObject.GetComponent<EnemyBehavior>();
+        if (enemy != null)
+        {
+            // Any object using EnemyBehavior script will takes damage
+            enemy.TakeDamage(damage);
+        }
+
+
+        /* Determine the direction of the projectile
+         * Create a rotation to face the direction */
+        Vector2 direction = -transform.right;
+        Quaternion rotation = Quaternion.Euler(0f, 0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 0f);
+        
+        /* Play Bullet impact sound
+         * Instantiate the impactEffect with the correct orientation */
+        SoundManager.instance.Play(SoundManager.SoundName.ShotEffect); // Play Sound: ShotEffect
+        Instantiate(impactEffect, transform.position, rotation);
+        Destroy(this.gameObject);
+    }
+    
+    // When projectile disappears from the screen
+    private void OnBecameInvisible()
+    { Destroy(this.gameObject); }
 }

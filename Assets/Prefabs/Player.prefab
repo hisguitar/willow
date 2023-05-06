@@ -289,7 +289,8 @@ MonoBehaviour:
   jumpForce: 4
   animator: {fileID: 7620235045536220964}
   launchOffset: {fileID: 6337438145688079531}
-  projectilePrefab: {fileID: 675114860655340122, guid: 099843f4418c2a04d981a687f183f638, type: 3}
+  knifePrefab: {fileID: 675114860655340122, guid: 099843f4418c2a04d981a687f183f638, type: 3}
+  waterBallPrefab: {fileID: 8020375467429408892, guid: c62e85c7045d715498719164d5e7c390, type: 3}
 --- !u!1 &6337438147181313117
 GameObject:
   m_ObjectHideFlags: 0
