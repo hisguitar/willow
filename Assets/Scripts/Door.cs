@@ -4,7 +4,7 @@ public class Door : MonoBehaviour
 {
     /*YOU HAVE TO CREATE NEW OBJECT CALLED "DOOR" THEN ADD "BOX COLLIDER 2D" COMPONENT FOR DETECT PLAYER
      AND PUT THIS SCRIP TO IT*/
-    private enum NextSceneName { SampleScene, SecondScene, ThirdScene }
+    private enum NextSceneName { FirstScene, SecondScene, ThirdScene }
     [SerializeField] private NextSceneName nextSceneName; // Type scene that you want to go on Inspector
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -13,8 +13,8 @@ public class Door : MonoBehaviour
         {
             switch (nextSceneName)
             {
-                case NextSceneName.SampleScene:
-                    LoadingScreenController.Instance.LoadNextScene("SampleScene");
+                case NextSceneName.FirstScene:
+                    LoadingScreenController.Instance.LoadNextScene("FirstScene");
                     break;
                 case NextSceneName.SecondScene:
                     LoadingScreenController.Instance.LoadNextScene("SecondScene");
