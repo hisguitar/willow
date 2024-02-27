@@ -15,12 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/EndCredit.unity
     guid: b39ee20316309d249a318f95e1fd61b3
   - enabled: 1
-    path: Assets/Scenes/FirstScene.unity
+    path: Assets/Scenes/StringstarFields.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/SecondScene.unity
+    path: Assets/Scenes/MagicCliffs.unity
     guid: 8743d14c927e91b43abb84b982eb0da1
   - enabled: 1
-    path: Assets/Scenes/ThirdScene.unity
+    path: Assets/Scenes/TaigaForest.unity
     guid: a562ef53854cdcc42913aeaff1c44a39
   m_configObjects: {}

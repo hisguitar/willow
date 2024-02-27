@@ -118,8 +118,8 @@ public class GameplayManager : MonoBehaviour
     
     // Restart, Return to MainMenu Button Methods ----------------------------------------------------------------------
     public void Restart() 
-    { SceneManager.LoadScene("SampleScene");} // Load "SampleScene"
+    { SceneManager.LoadScene("StringstarFields");}
 
     public void MainMenu()
-    { SceneManager.LoadScene("MainMenu"); } // Load "MainMenu"
+    { SceneManager.LoadScene("MainMenu"); }
 }
