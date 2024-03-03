@@ -18,4 +18,4 @@
 * TextMeshPro
 * Universal RP
 
-[Game Design Document (GDD)](Example.txt)
+[Game Design Document (GDD)](GDD.pdf)
