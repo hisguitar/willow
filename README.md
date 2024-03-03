@@ -17,3 +17,5 @@
 * Input System
 * TextMeshPro
 * Universal RP
+
+[Game Design Document (GDD)](Example.txt)
