@@ -7,7 +7,7 @@
 <p align="left">
   <kbd>
     <a href="https://hisguitar.itch.io/willow" target="_blank" rel="noreferrer">
-      <img src="Willow_Cover.png" width="820.26" height="461.39" alt="Willow The Little Witch" />
+      <img src="Willow_Cover2.png" width="820.26" height="461.39" alt="Willow The Little Witch" />
     </a>
   </kbd>
 </p>
