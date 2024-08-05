@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : Singleton<SoundManager>
 {
     /*YOU SHOULD CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
      AND PUT THIS SCRIPT TO IT*/
@@ -25,16 +25,6 @@ public class SoundManager : MonoBehaviour
         GodIsGoodToMe, // Background music for MainMenu
         StabbedEffect,
         LoveIsPuuung, // Background music for EndCredit
-    }
-
-    private void Awake()
-    {
-        if (instance == null)
-        { instance = this; }
-        else
-        {
-            Destroy(this);
-        }
     }
     
     // For setting the sound
