@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SoundManager : Singleton<SoundManager>
+public class SoundManager : SingletonPersistent<SoundManager>
 {
     /*YOU SHOULD CREATE NEW OBJECT IN GAMEPLAY MANAGER SCENE
      AND PUT THIS SCRIPT TO IT*/
